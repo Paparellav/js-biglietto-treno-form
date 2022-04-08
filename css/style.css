@@ -6,23 +6,33 @@ body {
     background-color: #b91450;
 }
 
-.ms_container {
-    margin: 2rem auto;
+.ms_container,
+.ms_container2 {
+    margin-top: 2rem;
     text-align: center;
 }
 
-.ms_container h1, 
-.ms_container h3 {
+h1, 
+h3 {
     text-transform: uppercase;
     color: white;
 }
 
-.ms_container > div {
-    width: 65%;
+.ms_container > div,
+.ms_container2 > div {
+    width: 100%;
     padding: 3rem 0;
     margin: 1rem auto;
     border-radius: 10px;
     background-color: white;
+}
+
+.ms_container2 h3 {
+    margin-left: 1rem;
+}
+
+.bg-grey {
+    background-color: grey;
 }
 
 label {

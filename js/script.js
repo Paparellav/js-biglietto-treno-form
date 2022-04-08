@@ -61,6 +61,35 @@ formBtn.addEventListener("click",
         greetingResponseCPcode.innerHTML = Math.floor(Math.random() * 10000) + 90000;
 
         const greetingResponseFinalPrice = document.querySelector(".col-3 #total");
-        greetingResponseFinalPrice.innerHTML = `${finalPrice}€`
+        greetingResponseFinalPrice.innerHTML = `${finalPrice}€`;
+
+        const containerHidden = document.querySelector(".ms_container2");
+        console.log(containerHidden);
+        containerHidden.classList.remove("d-none")
     }
 )
+
+//TASTO ANNULLA
+const formClearBtn = document.getElementById("form-clear-btn");
+console.log(formClearBtn);
+
+formClearBtn.addEventListener("click", 
+    function() {
+        
+        // Nascondo container2
+        const containerHidden = document.querySelector(".ms_container2");
+        console.log(containerHidden);
+        containerHidden.classList.add("d-none")
+
+        // Ripulsco i campi
+        const userName = document.getElementById("user-name");
+        console.log(userName);
+        userName.value = "";
+
+        const userDistance = document.getElementById("user-km");
+        userDistance.value = "";
+
+        const userAge = document.getElementById("user-age");
+        userAge.value = "";
+    }
+);
