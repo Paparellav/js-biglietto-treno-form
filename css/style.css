@@ -1,0 +1,38 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #b91450;
+}
+
+.ms_container {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.ms_container h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.ms_container > div {
+    width: 65%;
+    padding: 3rem 0;
+    margin: 1rem auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #b91450;
+}
+
+input,
+select {
+    border: 2px solid #b91450;
+    border-radius: 5px;
+}
